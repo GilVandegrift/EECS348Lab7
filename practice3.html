@@ -1,0 +1,23 @@
+<html>
+<head>
+    <h1>Lab 7 Practice 3</h1>
+</head>
+<body>
+    First Password: <input type="password" id="pass1" value=""> <br>
+    Second Password: <input type="password" id="pass2" value=""> <br>
+    <script>
+    function validate() {
+        var pass1 = document.getElementById("pass1").value;
+        var pass2 = document.getElementById("pass2").value;
+        if (pass1.length < 8) {
+            alert("Password must be at least 8 characters")
+        } else if (pass1 != pass2) {
+            alert("The passwords don't match")
+        } else {
+            alert("All Good :D")
+        }
+    }
+    </script>
+    <button onclick="validate()">Validate</button> <br>
+</body>
+</html>
